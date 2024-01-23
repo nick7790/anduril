@@ -38,10 +38,10 @@
 #define DEFAULT_LEVEL MAX_Nx7135
 
 #define RAMP_SMOOTH_FLOOR 1
-#define RAMP_SMOOTH_CEIL  130
+#define RAMP_SMOOTH_CEIL  150
 // 20, 38, 56, [75], 93, 111, 130
-#define RAMP_DISCRETE_FLOOR 20
-#define RAMP_DISCRETE_CEIL  RAMP_SMOOTH_CEIL
+#define RAMP_DISCRETE_FLOOR 10
+#define RAMP_DISCRETE_CEIL  115
 #define RAMP_DISCRETE_STEPS 7
 
 // safe limit ~35% power, 150% of sustainable thermal power

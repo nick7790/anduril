@@ -39,16 +39,16 @@
 #define QUARTERSPEED_LEVEL  2
 
 #define RAMP_SMOOTH_FLOOR 1  // low levels may be unreliable
-#define RAMP_SMOOTH_CEIL  130
+#define RAMP_SMOOTH_CEIL  150
 // 10, 30, 50, [70], 90, 110, 130
 // Nichia B35 model: (0.56), 1.4, 8.4, 34.5, [102], 250, 500, 860, (1300) lm
 #define RAMP_DISCRETE_FLOOR 10
-#define RAMP_DISCRETE_CEIL  RAMP_SMOOTH_CEIL
-#define RAMP_DISCRETE_STEPS 7
+#define RAMP_DISCRETE_CEIL  103
+#define RAMP_DISCRETE_STEPS 6
 
 // safe limit ~75% power
-#define SIMPLE_UI_FLOOR RAMP_DISCRETE_FLOOR
-#define SIMPLE_UI_CEIL RAMP_DISCRETE_CEIL
+#define SIMPLE_UI_FLOOR 10
+#define SIMPLE_UI_CEIL 80
 #define SIMPLE_UI_STEPS 5
 
 // stop panicking at ~70% power or ~600 lm
@@ -88,4 +88,3 @@
 
 // added for convenience
 #define USE_SOFT_FACTORY_RESET
-

@@ -22,7 +22,7 @@
 #define USE_THERMAL_REGULATION
 #if (MCU==0x85) || (MCU==0x1634)
 // sloppy temperature sensor needs bigger error margin
-#define DEFAULT_THERM_CEIL 45  // try not to get hotter than this (in C)
+#define DEFAULT_THERM_CEIL 47  // try not to get hotter than this (in C)
 #else
 // more accurate temperature sensor can regulate higher safely
 #define DEFAULT_THERM_CEIL 50  // try not to get hotter than this (in C)
@@ -56,7 +56,7 @@
 #define B_TIMING_OFF B_TIMEOUT_T
 
 // default ramp style: 0 = smooth, 1 = stepped
-#define RAMP_STYLE 0
+#define RAMP_STYLE 1
 
 // smooth ramp speed: 1, 2, 3, 4, ...  for 1X speed, 1/2, 1/3rd, 1/4th, ...
 #define USE_RAMP_SPEED_CONFIG
@@ -156,9 +156,9 @@
 #define USE_BEACON_MODE
 
 // enable/disable various strobe modes
-#define USE_BIKE_FLASHER_MODE
+//#define USE_BIKE_FLASHER_MODE
 #define USE_PARTY_STROBE_MODE
-#define USE_TACTICAL_STROBE_MODE
+//#define USE_TACTICAL_STROBE_MODE
 #define USE_LIGHTNING_MODE
 #define USE_CANDLE_MODE
 
@@ -166,9 +166,9 @@
 // (these replace the fun strobe group,
 //  so don't enable them at the same time as any of the above strobes)
 //#define USE_POLICE_STROBE_MODE
-#define USE_SOS_MODE
+//#define USE_SOS_MODE
 //#define USE_SOS_MODE_IN_FF_GROUP  // put SOS in the "boring strobes" mode
-#define USE_SOS_MODE_IN_BLINKY_GROUP  // put SOS in the blinkies mode group
+//#define USE_SOS_MODE_IN_BLINKY_GROUP  // put SOS in the blinkies mode group
 
 // enable a mode for locking the light for safe carry
 #define USE_LOCKOUT_MODE
@@ -209,7 +209,7 @@
 #define USE_SMOOTH_STEPS
 #endif
 // 0 = none, 1 = smooth, 2+ = undefined
-#define DEFAULT_SMOOTH_STEPS_STYLE  1
+#define DEFAULT_SMOOTH_STEPS_STYLE  0
 
 // by default, allow user to set the channel for each strobe-group mode
 // (but allow disabling this feature per build)

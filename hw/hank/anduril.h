@@ -11,7 +11,8 @@
 #ifdef RGB_LED_OFF_DEFAULT
 #undef RGB_LED_OFF_DEFAULT
 #endif
-#define RGB_LED_OFF_DEFAULT 0x18  // low, rainbow
+#define RGB_LED_OFF_DEFAULT 0x19  // low, voltage
+#define RGB_LED_LOCKOUT_DEFAULT 0x39  // blinking, voltage
 
 // half a second per color in rainbow mode
 //#define RGB_RAINBOW_SPEED 0x03
@@ -27,4 +28,3 @@
 
 // for consistency with KR4 (not otherwise necessary though)
 #define USE_SOFT_FACTORY_RESET
-
